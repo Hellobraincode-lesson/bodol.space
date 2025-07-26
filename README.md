@@ -1,12 +1,4 @@
 # Threads WebApp Clone
-
-
-![App SS](Frontend/public/app.png)
-
-[👁App Demo:](https://youtu.be/ymA_R7lbrWs) 👈 Click here
-
-
-
 Feature List:
 
 -   🌟 Tech stack: MERN + Chakra UI
