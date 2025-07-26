@@ -1,4 +1,4 @@
-# Threads WebApp Clone
+# Bodol.space
 Feature List:
 
 -   🌟 Tech stack: MERN + Chakra UI
