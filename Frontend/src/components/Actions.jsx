@@ -130,14 +130,14 @@ const Actions = ({ id, likes, currentUser }) => {
         >
           <ModalOverlay />
           <ModalContent bg={colorMode === 'dark' ? "gray.dark" : "whiteAlpha.900"}>
-            <ModalHeader bg={colorMode === 'dark' ? "gray.dark" : "whiteAlpha.900"} textColor={colorMode == 'dark' ? 'white' : 'black'}>Reply</ModalHeader>
+            <ModalHeader bg={colorMode === 'dark' ? "gray.dark" : "whiteAlpha.900"} textColor={colorMode == 'dark' ? 'white' : 'black'}>Хариу</ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6} 
            bg={colorMode === 'dark' ? "gray.dark" : "whiteAlpha.900"}>
               <FormControl bg={colorMode === 'dark' ? "gray.dark" : "whiteAlpha.900"}>
                 <input
                   type="text"
-                  placeholder="Your thoughts..."
+                  placeholder="Бодол хуваалцах..."
                   className={` outline-none focus:none bg-transparent text-lg w-full `}
                   {...register("text")}
                 />
@@ -150,18 +150,18 @@ const Actions = ({ id, likes, currentUser }) => {
               
                bg={colorMode=== 'dark' ? 'white' : 'black'}
                textColor={colorMode== 'dark' ? 'black' : 'white'}
-             >Cancel</Button>
+             >Болих</Button>
 
              {
               isLoading ?   <Button
               isLoading
               marginLeft={4}
-              loadingText="Saving"
+              loadingText="Хадгалж байна"
               spinnerPlacement="start"
               paddingX={6}
               borderRadius={"full"}
             >
-            save
+            Хадгалах
             </Button> : 
               <Button
                 marginLeft={4}
@@ -172,7 +172,7 @@ const Actions = ({ id, likes, currentUser }) => {
                 textColor={colorMode== 'dark' ? 'black' : 'white'}
                 onClick={handleSubmit(onSubmit)}
               >
-                Save
+                Хадгалах
               </Button>
              }
               

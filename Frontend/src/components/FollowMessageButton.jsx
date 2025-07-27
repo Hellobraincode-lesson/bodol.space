@@ -30,7 +30,7 @@ const {colorMode}=useColorMode()
       });
     } catch (error) {
       toast({
-        description: 'some error occured',
+        description: 'Алдаа гарлаа',
         status: "error",
         isClosable: true,
         duration: 3000,
@@ -46,7 +46,7 @@ const {colorMode}=useColorMode()
           className={`${colorMode == 'dark' ? (isFollowing ?'bg-neutral-700 text-white hover:bg-neutral-600' :'bg-white text-black hover:bg-neutral-300') : (isFollowing ? 'bg-neutral-700 text-white hover:bg-neutral-600' :'bg-neutral-900 text-white hover:bg-zinc-800')} w-full py-2 rounded-lg font-semibold text-lg }`}
           onClick={handleFollowUnfollow}
         >
-          {isFollowing ? "following" : "follow"}
+          {isFollowing ? "Дагаж байна" : "Дагах"}
         </button>
     
       </div>

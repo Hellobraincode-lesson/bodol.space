@@ -120,11 +120,11 @@ else{
         </div>
         <div className="left flex gap-2 items-center px-10">
           <div className="font-normal  text-zinc-500 cursor-pointer">
-            {post?.replies?.length} replies
+            {post?.replies?.length} хариу
           </div>
           <div className="font-normal  text-zinc-500">.</div>
           <div className="instalink font-normal text-zinc-500 cursor-pointer">
-            {post?.likes?.length} likes
+            {post?.likes?.length} дэмжив
           </div>
         </div>
       </div>

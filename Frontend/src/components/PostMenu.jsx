@@ -137,7 +137,7 @@ const PostMenu = ({ id, currUser }) => {
                     }`}
                     onClick={onOpen}
                   >
-                    Edit thread
+                    Сэдвийг засах
                   </MenuItem>
                   <MenuItem
                     bg={colorMode === "dark" ? "gray.dark" : "whiteAlpha.800"}
@@ -148,7 +148,7 @@ const PostMenu = ({ id, currUser }) => {
                     }`}
                     onClick={handleDelete}
                   >
-                    Delete Thread
+                    Сэдвийг устгах
                   </MenuItem>
                 </>
               ) : null}
@@ -161,7 +161,7 @@ const PostMenu = ({ id, currUser }) => {
                       : "hover:bg-neutral-100"
                   }`}
                 >
-                  Visit account
+                  Профайл руу очих
                 </MenuItem>
               </Link>
             </MenuList>
@@ -176,14 +176,14 @@ const PostMenu = ({ id, currUser }) => {
       >
         <ModalOverlay />
         <ModalContent className="bg-neutral-800">
-          <ModalHeader className="bg-neutral-900">Edit Thread</ModalHeader>
+          <ModalHeader className="bg-neutral-900">Сэдвийг засах</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6} className="bg-neutral-900 ">
             <FormControl className="bg-neutral-900">
-              <FormLabel>Thread</FormLabel>
+              <FormLabel>Сэдэв</FormLabel>
               <input
                 type="text"
-                placeholder="What is happening!?"
+                placeholder="Юу болж байна вэ?"
                 className=" outline-none focus:none text-lg w-full bg-neutral-900"
                 defaultValue={postData?.posttext}
                 {...register("posttext")}
@@ -199,12 +199,12 @@ const PostMenu = ({ id, currUser }) => {
             {isLoading ? (
               <Button
                 isLoading
-                loadingText="Saving"
+                loadingText="Хадгалж байна"
                 spinnerPlacement="start"
                 paddingX={6}
                 borderRadius={"full"}
               >
-                save
+                Хадгалах
               </Button>
             ) : (
               <Button
@@ -215,7 +215,7 @@ const PostMenu = ({ id, currUser }) => {
                 paddingX={6}
                 onClick={handleSubmit(onSubmit)}
               >
-                Save
+                Хадгалах
               </Button>
             )}
             <Button
@@ -224,7 +224,7 @@ const PostMenu = ({ id, currUser }) => {
               borderRadius={"full"}
               marginX={4}
             >
-              Cancel
+              Болих
             </Button>
           </ModalFooter>
         </ModalContent>

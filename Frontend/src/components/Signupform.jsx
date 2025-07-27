@@ -23,10 +23,10 @@ const Signupform = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading]=useState(false);
   const Schema = yup.object().shape({
-    name: yup.string().required("Name is required"),
-    username: yup.string().required("UserName is required"),
+    name: yup.string().required("Нэр шаардлагатай"),
+    username: yup.string().required("Хэрэглэгчийн нэр шаардлагатай"),
     email: yup.string().email().required(),
-    password: yup.string().min(6).required("Min length is 6"),
+    password: yup.string().min(6).required("Нууц үгийн урт 6-аас дээш байх ёстой"),
   });
   const {
     register,
@@ -50,7 +50,7 @@ const Signupform = () => {
       });
       localStorage.setItem('currUser', JSON.stringify(response.data))
       toast({
-        description:'Account created successfully',
+        description:'Бүртгэл амжилттай үүслээ',
         status: 'success',
         duration: 3000,
         isClosable: true,
@@ -73,26 +73,26 @@ const Signupform = () => {
       <HStack>
         <Box>
           <FormControl isRequired>
-            <FormLabel>Name</FormLabel>
+            <FormLabel>Нэр</FormLabel>
             <Input type="text" {...register("name")} />
             <p>{errors.name?.message}</p>
           </FormControl>
         </Box>
         <Box>
           <FormControl isRequired>
-            <FormLabel>UserName</FormLabel>
+            <FormLabel>Хэрэглэгчийн нэр</FormLabel>
             <Input type="text" {...register("username")} />
             <p>{errors.username?.message}</p>
           </FormControl>
         </Box>
       </HStack>
       <FormControl id="email" isRequired>
-        <FormLabel>Email address</FormLabel>
+        <FormLabel>Имэйл хаяг</FormLabel>
         <Input type="email" {...register("email")} />
         <p>{errors.email?.message}</p>
       </FormControl>
       <FormControl id="password" isRequired>
-        <FormLabel>Password</FormLabel>
+        <FormLabel>Нууц үг</FormLabel>
         <InputGroup>
           <Input
             type={showPassword ? "text" : "password"}
@@ -114,14 +114,14 @@ const Signupform = () => {
 {
   isLoading ?    <Button
       isLoading
-      loadingText="Signing Up"
+      loadingText="Бүртгүүлж байна"
       spinnerPlacement="start"
       size="lg"
     >
-     SignUp
+     Бүртгүүлэх
     </Button> :    <Button
           type="submit"
-          loadingText="Submitting"
+          loadingText="Илгээж байна"
           size="lg"
           bg={useColorModeValue("#101010", "white")}
           color={useColorModeValue("white", "black")}
@@ -130,7 +130,7 @@ const Signupform = () => {
           }}
           onClick={handleSubmit(onSubmit)}
         >
-          Sign up
+          Бүртгүүлэх
         </Button>
 }
    

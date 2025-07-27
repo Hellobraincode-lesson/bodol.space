@@ -26,7 +26,7 @@ const AllUsers = () => {
   }, [])
 
   if (loading) {
-    return <div className="flex items-center justify-center w-full"><Spinner /><h1 className="py-24 font-semibold text-xl px-4">Loading...</h1></div>
+    return <div className="flex items-center justify-center w-full"><Spinner /><h1 className="py-24 font-semibold text-xl px-4">Уншиж байна...</h1></div>
   }
   else {
 

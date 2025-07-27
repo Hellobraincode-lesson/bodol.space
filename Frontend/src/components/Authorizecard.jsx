@@ -14,7 +14,7 @@ const [isLogin, setIslogin]=useState(false)
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={10} px={6}>
         <Stack align={'center'}>
           <Heading fontSize={'4xl'} textAlign={'center'}>
-          {isLogin ? 'Login': 'Signup'}
+          {isLogin ? 'Нэвтрэх': 'Бүртгүүлэх'}
           </Heading>
         </Stack>
         <Box
@@ -26,7 +26,7 @@ const [isLogin, setIslogin]=useState(false)
          {isLogin ? <Loginform/> : <Signupform/>} 
             <Stack pt={6}>
               <Text align={'center'} color={"gray"}>
-              {isLogin ? 'Dont have an account?': 'Already a user?'}  <Link color={useColorModeValue('#101010', 'white')} onClick={()=>{setIslogin(!isLogin)}}>{isLogin ? 'Signup': 'Login'}</Link>
+              {isLogin ? 'Бүртгэлгүй юу?': 'Бүртгэлтэй юу?'}  <Link color={useColorModeValue('#101010', 'white')} onClick={()=>{setIslogin(!isLogin)}}>{isLogin ? 'Бүртгүүлэх': 'Нэвтрэх'}</Link>
 
               </Text>
             </Stack>

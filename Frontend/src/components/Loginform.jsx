@@ -54,12 +54,12 @@ finally{
     <>
 <FormControl isRequired>
     
-       <FormLabel>UserName</FormLabel>
+       <FormLabel>Хэрэглэгчийн нэр</FormLabel>
        <Input type="text" {...register("username")} />
        <p>{errors.username?.message}</p>
      </FormControl>
  <FormControl id="password" isRequired>
-   <FormLabel>Password</FormLabel>
+   <FormLabel>Нууц үг</FormLabel>
    <InputGroup>
      <Input type={showPassword ? 'text' : 'password'}  {...register("password")} width={'25rem'}/>
      <InputRightElement h={'full'}>
@@ -76,14 +76,14 @@ finally{
    {
   isLoading ?    <Button
       isLoading
-      loadingText="Loging In"
+      loadingText="Нэвтэрч байна"
       spinnerPlacement="start"
       size="lg"
     >
-    Login
+    Нэвтрэх
     </Button> :    <Button
           type="submit"
-          loadingText="Submitting"
+          loadingText="Илгээж байна"
           size="lg"
           bg={useColorModeValue("#101010", "white")}
           color={useColorModeValue("white", "black")}
@@ -92,7 +92,7 @@ finally{
           }}
           onClick={handleSubmit(onsubmit)}
         >
-          Login
+          Нэвтрэх
         </Button>
 }
 
