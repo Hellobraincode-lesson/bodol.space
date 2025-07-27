@@ -89,11 +89,7 @@ const SingleUserPost = ({user, currUser}) => {
       </div>
       <div className="flex items-center ">
         <div className="avts">
-          <Avatar
-            name="Dan Abrahmov"
-            src="https://bit.ly/dan-abramov"
-            size="xs"
-          />
+          {/* Removed Dan Abrahmov avatar */}
           <Avatar
             name="Christian Nwamba"
             src="https://bit.ly/code-beast"
