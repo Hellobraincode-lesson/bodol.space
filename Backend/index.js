@@ -5,18 +5,17 @@ dotenv.config();
 const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const app = express();
+app.use(cors({ origin: '*', credentials: false }));
+const allowedOrigins = [
+  'https://www.bodol.space',
+  'https://bodol.space',
+  // бусад preview болон dev домэйнүүд
+];
+
 app.use(
   cors({
-    origin: [
-      'https://bodol-space.vercel.app',
-      'https://bodol-space-hellobraincodes-projects.vercel.app',
-      'https://bodol-space-gb0uxxdl6-hellobraincodes-projects.vercel.app',
-      'https://bodol-space-git-main-hellobraincodes-projects.vercel.app',
-      'https://www.bodol.space',
-      'https://bodol.space',
-      'http://localhost:3000',
-    ],
-    credentials: true,
+    origin: allowedOrigins,
+    credentials: process.env.NODE_ENV === 'production',
   })
 );
 mongoose
