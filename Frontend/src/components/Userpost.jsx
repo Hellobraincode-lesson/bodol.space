@@ -35,6 +35,7 @@ const [loading, setLoading]=useState(true);
     const createdAtDate = new Date(timestamp);
     const now = new Date();
     const secondsAgo = Math.floor((now - createdAtDate) / 1000);
+    if (secondsAgo < 60) {
       return `${secondsAgo}s${secondsAgo !== 1 ? "" : ""}`;
     }
     const minutesAgo = Math.floor(secondsAgo / 60);
@@ -48,20 +49,7 @@ const [loading, setLoading]=useState(true);
     const daysAgo = Math.floor(hoursAgo / 24);
     return `${daysAgo}d${daysAgo !== 1 ? "" : ""}`;
   };
-    if (secondsAgo < 60) {
-      return `${secondsAgo} сек`;
-    }
-    const minutesAgo = Math.floor(secondsAgo / 60);
-    if (minutesAgo < 60) {
-      return `${minutesAgo} мин`;
-    }
-    const hoursAgo = Math.floor(minutesAgo / 60);
-    if (hoursAgo < 24) {
-      return `${hoursAgo} цаг`;
-    }
-    const daysAgo = Math.floor(hoursAgo / 24);
-    return `${daysAgo} өдөр`;
-  };
+if (loading) {
   return <div className="my-8">
   <SkeletonCircle size='10' />
   <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='2' />
@@ -70,15 +58,6 @@ const [loading, setLoading]=useState(true);
   <SkeletonCircle size='10' mt={'8'} />
   <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='2' />
   <Skeleton height={ '280'} width={'100%'} mt={'8'} borderRadius={'10'}/>
-if (loading) {
-  return <div className="my-8">
-    <SkeletonCircle size='10' />
-    <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='2' />
-    <Skeleton height={ '280'} width={'100%'} mt={'8'} borderRadius={'10'}/>
-    <div className="text-center font-semibold mt-4">Уншиж байна...</div>
-    <SkeletonCircle size='10' mt={'8'} />
-    <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='2' />
-    <Skeleton height={ '280'} width={'100%'} mt={'8'} borderRadius={'10'}/>
   
 </div>
 }
