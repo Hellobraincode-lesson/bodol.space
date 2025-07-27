@@ -103,7 +103,7 @@ const CreateThread = ({ pfp, id }) => {
           </Link>
           <input
             type="text"
-          placeholder="Юу болж байна вэ?"
+          placeholder="Юу бодож байна вэ?"
             className="pl-4 outline-none focus:none text-lg w-full bg-transparent"
             {...register("posttext")}
           />
