@@ -42,7 +42,7 @@ const SearchBar = () => {
 
   return (
     <>
-      <h1 className="mt-20 font-bold text-4xl px-4 sm:px-4 md:px-16 lg:px-16 xl:px-20">Search</h1>
+      <h1 className="mt-20 font-bold text-4xl px-4 sm:px-4 md:px-16 lg:px-16 xl:px-20">Хайлт</h1>
       <InputGroup>
         <div className="flex items-center justify-center w-full my-4 px-2 sm:px-2 md:px-16 lg:px-16 xl:px-20">
           <Input
