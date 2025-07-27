@@ -9,8 +9,12 @@ app.use(
   cors({
     origin: [
       'https://bodol-space.vercel.app',
+      'https://bodol-space-hellobraincodes-projects.vercel.app',
+      'https://bodol-space-gb0uxxdl6-hellobraincodes-projects.vercel.app',
+      'https://bodol-space-git-main-hellobraincodes-projects.vercel.app',
+      'https://www.bodol.space',
+      'https://bodol.space',
       'http://localhost:3000',
-      'http://www.bodol.space',
     ],
     credentials: true,
   })
