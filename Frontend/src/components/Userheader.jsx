@@ -92,10 +92,10 @@ const Userheader = ({ user, currUser }) => {
         <div className="flex">
           <div className="left flex w-11/12 gap-2 items-center justify-start">
             <div className="followersCount font-normal hover:underline text-zinc-500 cursor-pointer">
-              {user?.followers.length} followers
+              {user?.followers.length} дагагч
             </div>
             <div className="instalink font-normal hover:underline text-zinc-500 cursor-pointer lg:block md:block sm:hidden">
-             . instagram.com
+             . bodol.space
             </div>
           </div>
           <div className="right flex w-6/12 gap-2 items-center justify-end">
@@ -147,7 +147,7 @@ const Userheader = ({ user, currUser }) => {
                             : "hover:bg-neutral-100"
                         }`}
                       >
-                        Logout
+                      Гарах
                       </MenuItem>
                     )}
                   </MenuList>

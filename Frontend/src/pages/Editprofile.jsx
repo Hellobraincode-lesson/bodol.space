@@ -125,7 +125,7 @@ setIsLoading(true)
             p={6}
           >
             <Heading lineHeight={1.1} fontSize={{ base: "2xl", sm: "3xl" }}>
-              Edit profile
+              Хувийн мэдээлэл засах
             </Heading>
             <FormControl>
               <Stack direction={["column", "row"]} spacing={6}>
@@ -153,7 +153,7 @@ setIsLoading(true)
               </Stack>
               </FormControl>
             <FormControl>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>Нэр</FormLabel>
               <Input
                 placeholder="John Doe"
                 _placeholder={{ color: "gray.500" }}
@@ -163,7 +163,7 @@ setIsLoading(true)
               />
             </FormControl>
             <FormControl>
-              <FormLabel>User name</FormLabel>
+              <FormLabel>Хэрэглэгчийн нэр</FormLabel>
               <Input
                 placeholder="johndoe"
                 _placeholder={{ color: "gray.500" }}
@@ -173,7 +173,7 @@ setIsLoading(true)
               />
             </FormControl>
             <FormControl>
-              <FormLabel>Email address</FormLabel>
+              <FormLabel>Цахим шуудан</FormLabel>
               <Input
                 placeholder="your-email@example.com"
                 _placeholder={{ color: "gray.500" }}
@@ -183,7 +183,7 @@ setIsLoading(true)
               />
             </FormControl>
             <FormControl>
-              <FormLabel>Bio</FormLabel>
+              <FormLabel>Танилцуулга</FormLabel>
               <Input
                 placeholder="Your bio."
                 _placeholder={{ color: "gray.500" }}
@@ -193,7 +193,7 @@ setIsLoading(true)
               />
             </FormControl>
             <FormControl>
-              <FormLabel>Password</FormLabel>
+              <FormLabel>Нууц үг</FormLabel>
               <Input
                 placeholder="input old or new password"
                 _placeholder={{ color: "gray.500" }}
@@ -208,7 +208,7 @@ setIsLoading(true)
                   navigate(`/user/${userid}`);
                 }}
               >
-                Cancel
+                Цуцлах
               </button>
 {
   isLoading ? <Button
@@ -217,12 +217,12 @@ setIsLoading(true)
   spinnerPlacement="start"
   className="w-full bg-white text-black hover:bg-slate-200 py-2 my-2 rounded-lg font-semibold"
 >
-Save
+Хадгалах
 </Button> :<button
                 className={`w-full py-2 my-2 rounded-lg font-semibold  ${colorMode == 'dark' ? 'bg-white text-black hover:bg-neutral-300' : 'bg-neutral-900 text-white hover:bg-zinc-800'}`}
                 type="submit"
               >
-                Save
+                Хадгалах
               </button>
 }
 

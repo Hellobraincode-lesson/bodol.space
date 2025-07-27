@@ -78,11 +78,11 @@ const Post = ({currUser}) => {
     <Actions id={postid} likes={postData?.likes} currentUser={currUser} />
     <div className="left flex gap-2 items-center px-2 mb-6">
          <div className=" font-normal  text-zinc-500 cursor-pointer">
-         {postData?.replies.length} replies
+         {postData?.replies.length} хариулт
          </div>
          <div className="font-normal  text-zinc-500">.</div>
          <div className="instalink font-normal text-zinc-500 cursor-pointer">
-         {postData?.likes.length} likes
+         {postData?.likes.length} дэмжив
          </div>
          
        </div>

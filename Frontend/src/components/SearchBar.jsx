@@ -24,7 +24,7 @@ const SearchBar = () => {
       setUser(response?.data);
     } catch (error) {
       toast({
-        description: error.response?.data.error || 'Error in Finding User',
+        description: error.response?.data.error || 'Алдаа гарлаа',
         status: 'error',
         duration: 3000,
         isClosable: true

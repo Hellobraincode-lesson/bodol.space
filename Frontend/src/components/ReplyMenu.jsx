@@ -50,13 +50,13 @@ const ReplyMenu = ({ replyinguserid, postid, replyid, currUser}) => {
                     className={`${colorMode == 'dark' ? 'hover:bg-neutral-800' : 'hover:bg-neutral-100'}`}
                     onClick={handleDelete}
                   >
-                    Delete reply
+                    Хариулт устгах
                   </MenuItem>
                 </>
               ) : null}
             <Link to={`/user/${replyinguserid}`}>  <MenuItem  bg={colorMode === 'dark' ? "gray.dark" : "whiteAlpha.800"}
                     className={`${colorMode == 'dark' ? 'hover:bg-neutral-800' : 'hover:bg-neutral-100'}`}>
-                Visit account
+                Хэрэглэгчийн профайл руу орох
               </MenuItem></Link>
             </MenuList>
           </Portal>
