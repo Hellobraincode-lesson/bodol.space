@@ -183,7 +183,7 @@ const PostMenu = ({ id, currUser }) => {
               <FormLabel>Сэдэв</FormLabel>
               <input
                 type="text"
-                placeholder="Юу болж байна вэ?"
+                placeholder="Юу бодож байна вэ?"
                 className=" outline-none focus:none text-lg w-full bg-neutral-900"
                 defaultValue={postData?.posttext}
                 {...register("posttext")}
