@@ -108,11 +108,7 @@ else{
       <div className="flex items-center ">
         <div className="avts">
           {/* Removed Dan Abrahmov avatar */}
-          <Avatar
-            name="Christian Nwamba"
-            src="https://bit.ly/code-beast"
-            size="xs"
-          />
+          {/* Removed Christian Nwamba avatar */}
         </div>
         <div className="left flex gap-2 items-center px-10">
           <div className="font-normal  text-zinc-500 cursor-pointer">
