@@ -8,7 +8,7 @@ import { useToast } from "@chakra-ui/react";
 import axios from "axios";
 import { GoPerson } from "react-icons/go";
 import {useNavigate} from 'react-router-dom'
-import { SiThreads } from "react-icons/si";
+
 
 
 const Header = () => {
@@ -74,8 +74,8 @@ const Header = () => {
               </div>
             </Link>
 
-            <div className="px-4 sm:px-8 md:px-10 lg:px-10 xl:px-16 cursor-pointer" onClick={toggleColorMode}>
-              <SiThreads size={32}/>
+            <div className="px-4 sm:px-8 md:px-10 lg:px-10 xl:px-16 cursor-pointer text-3xl select-none" title="Сэтгэлийн үүл" onClick={toggleColorMode}>
+              💭
             </div>
             
             <Link to={`/user/${user?.id}`}>
