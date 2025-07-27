@@ -7,7 +7,11 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(
   cors({
-    origin: ['https://bodol-space.vercel.app', 'http://localhost:3000'],
+    origin: [
+      'https://bodol-space.vercel.app',
+      'http://localhost:3000',
+      'http://www.bodol.space',
+    ],
     credentials: true,
   })
 );
