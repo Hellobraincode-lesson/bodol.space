@@ -46,7 +46,7 @@ const SingleUserPost = ({user, currUser}) => {
   };
 
   if (userPost.length==0){
-    return <div className="flex items-center justify-center w-full gap-4 my-24"><MdOutlineBrokenImage size={40}/><h1 className="font-bold text-3xl">No Posts Yet</h1></div>
+    return <div className="flex items-center justify-center w-full gap-4 my-24"><MdOutlineBrokenImage size={40}/><h1 className="font-bold text-3xl">Нийтлэл байхгүй байна</h1></div>
   }
   else{
       return userPost?.map((post) => (

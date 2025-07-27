@@ -76,7 +76,7 @@ const Userheader = ({ user, currUser }) => {
                     : "cursor-pointer text-xs ml-2 bg-neutral-400 rounded-lg px-1 flex items-center justify-center"
                 }
               >
-                threads.net
+                bodol.space
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@ const Userheader = ({ user, currUser }) => {
           >
             {" "}
             {togle ? (
-              <button onClick={handleTogle}>Threads</button>
+              <button onClick={handleTogle}>Бодол</button>
             ) : (
               "Threads"
             )}{" "}
@@ -193,7 +193,7 @@ const Userheader = ({ user, currUser }) => {
             } `}
           >
             {!togle ? (
-              <button onClick={handleTogle}>Replies</button>
+              <button onClick={handleTogle}>Хариулт</button>
             ) : (
               "Replies"
             )}
